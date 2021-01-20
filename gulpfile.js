@@ -81,11 +81,22 @@ function copyFonts() {
 function scriptsVendors() {
   return gulp.src([
       'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/jquery/dist/jquery.min.js',
+      'node_modules/lightbox2/dist/js/lightbox.js',
+      'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+      'node_modules/owlcarousel/owl-carousel/owl.carousel.min.js',
       'node_modules/slick-carousel/slick/slick.min.js',
       'node_modules/svg4everybody/dist/svg4everybody.min.js'
     ])
     .pipe(concat('vendors.min.js'))
     .pipe(gulp.dest(paths.build + 'js/'))
+}
+
+function libs() {
+  return gulp.src(
+    paths.src + 'libs/**/*.*'
+  )
+    .pipe(gulp.dest(paths.build + 'libs/'))
 }
 
 function htmls() {
@@ -126,6 +137,7 @@ function serve() {
 exports.styles = styles;
 exports.scripts = scripts;
 exports.scriptsVendors = scriptsVendors;
+exports.libs = libs;
 exports.htmls = htmls;
 exports.images = images;
 exports.svgSprite = svgSprite;
@@ -134,11 +146,11 @@ exports.watch = watch;
 
 gulp.task('build', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images)
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, libs, htmls, copyFonts, images)
 ));
 
 gulp.task('default', gulp.series(
   clean,
-  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, htmls, copyFonts, images),
+  gulp.parallel(styles, svgSprite, scripts, scriptsVendors, libs, htmls, copyFonts, images),
   gulp.parallel(watch, serve)
 ));

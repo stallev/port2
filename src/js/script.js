@@ -1,5 +1,7 @@
-let name = 'User Name';
-let place = 'Flavortown';
-
-console.log( `Hello ${name}, ready for ${place}?` );
+$(document).ready(function() {
+	$('.header__burger').click(function(event) {
+		$('.header__burger,.header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+});
 

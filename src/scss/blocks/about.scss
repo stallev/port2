@@ -1,0 +1,47 @@
+.about{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: $content-weight-main;
+  &__description-item{
+    margin-top: 10px;
+  }
+  &__photo-image{
+    object-fit: contain;
+  }
+  &__photo-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  &__craft-list{
+    margin-top: 20px;
+  }
+  &__craft-item{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-style: italic;
+    &::before{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 2px;
+      top: 10px;
+      left: -20px;
+      background-color: $btn-bg-color;
+      transform: rotate(45deg);
+    }
+    &::after{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 2px;
+      top: 10px;
+      left: -15px;
+      background-color: $btn-bg-color;
+      transform: rotate(-45deg);
+    }
+    
+  }
+}

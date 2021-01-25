@@ -1,2 +1,31 @@
 .section-title{
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  &::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 4px;
+    bottom: 0;
+    left: calc(50% - 45px);
+    background-color: $btn-bg-color;
+  }
+  &__text{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+  &__description{
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 40px;
+    font-weight: $content-weight-main;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+  }
 }

@@ -1,0 +1,44 @@
+.list-card-item{
+  padding: 25px 42px 77px;
+  margin-bottom: 30px;
+  background-color: $list-card-item-bg;
+  transition: all 0.3s ease-out;
+  &:hover{
+    background-color: $btn-bg-color;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+  }
+  &__icon-wrapper{
+    width: 43px;
+    height: 43px;
+    margin-bottom: 23px;
+  }
+  &__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    text-align: center;
+    color: $btn-bg-color;
+    transition: .8s linear;
+    transform: rotateY(0);
+  }
+  &__title{
+    margin-bottom: 22px;
+    font-style: normal;
+    font-weight: $content-weight-main;
+    font-size: 25px;
+    line-height: 25px;
+  }
+  &__description{
+    font-style: normal;
+    font-weight: $content-weight-main;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+.list-card-item:hover i{
+  color: $content-color;
+}

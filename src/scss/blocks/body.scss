@@ -1,9 +1,24 @@
 body{
   margin: 0;
   font-size: 10px;
-  background-color: #fdfaf3;
+  background-color: $body-color;
+  font-family: $content-ff;
 }
 ul{
   padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+div, section, p, span, article, li, ul{
+  outline: 1px solid green;
+  box-sizing: border-box;
+}
+section{
+  color: $content-color;
+}
+a:hover{
+  text-decoration: none;
 }
 @include respond-to(tabletAndWider){}

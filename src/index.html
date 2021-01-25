@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/034ec40c3a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
   <link rel="stylesheet" href="libs/lightbox2/lightbox.css">
   <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
@@ -15,50 +16,171 @@
 </head>
 <body>
   <header class="header">
-    <div class="container container--header">
-      <div class="header__upper">
-        <div class="header__logo-toggle">
-            <div class="logo logo--header">
-              <picture class="logo__image logo__image--header">
-                <source media="(min-width: 768px)" srcset="img/decor/logo-tablet.png">
-                <source media="(min-width: 1360px)" srcset="img/decor/logo-desktop.png">
-                <img src="img/decor/logo.png" alt="logo">
-              </picture>
-            </div>
-            <div class="header__toggle">
-              <button class="header__toggle-button header__toggle-button--cross"></button>
-              <button class="header__toggle-button header__toggle-button--hamburger"></button>
-            </div>
-
-          </div>
-        <nav class="nav nav--header">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">главная</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">преимущества</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">портфолио</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">наши услуги</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">отзывы</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--header-nav" href="#">контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="header__bottom">
-        <div class="page-title">
-            <h1 class="page-title__title">
-              Дизайн интерьеров
-            </h1>
-            <p class="page-title__description">
-              Воплотим в жизнь интерьер, который будет радовать лаконичностью и уютом.
-            </p>
-          </div>
-          <a href="#" class="header__bottom-menu-link">
-            ЗАКАЗАТЬ ДИЗАЙН
+    <div class="header__upper">
+      <div class='container'>
+        <div class="header__upper-body">
+          <a href="#" class="header__logo">
+            <img src="img/decor/logo.png" alt="">
           </a>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li>
+                <a href="" class="header__link">Главная</a>
+              </li>
+              <li>
+                <a href="" class="header__link">Услуги</a>
+              </li>
+              <li>
+                <a href="" class="header__link">Обо мне</a>
+              </li>
+              <li>
+                <a href="" class="header__link">Портфолио</a>
+              </li>
+              <li>
+                <a href="" class="header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__bottom-content">
+        <div class="container">
+          <div class="row">
+            <div class="col col-lg-8">
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <i class="fa fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <i class="fa fa-vk"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <h1 class="page-title">Александр Левшенко</h1>
+              <div class="header__info">
+                <p class="header__description">
+                  веб-разработчик
+                </p>
+                <a href="#" class="header__know-more-link ">Портфолио</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
   <main class="main">
+    <section class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="section-title__text">Мои услуги</h2>
+          <p class="section-title__description">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.
+          </p>
+        </div>
+        <div class="row services__list">
+          <article class="col col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-10 offset-sm-1 list-card-item">
+            <div class="list-card-item__content">
+              <div class="list-card-item__icon-wrapper">
+                <i class="list-card-item__icon fa fa-github"></i>
+              </div>
+              <h3 class="list-card-item__title">Верстка макета</h3>
+              <p class="list-card-item__description">
+                Верстаю адаптивно и кроссбраузерно, используя макеты PSD и Figma
+              </p>
+            </div>
+          </article>
+          <article class="col col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-10 offset-sm-1 list-card-item">
+            <div class="list-card-item__content">
+              <div class="list-card-item__icon-wrapper">
+                <i class="list-card-item__icon fab fa-css3-alt"></i>
+              </div>
+              <h3 class="list-card-item__title">Оптимизация верстки</h3>
+              <p class="list-card-item__description">
+                Оптимизация скорости загрузки сайта (сжатие изображений, CSS, JS)
+              </p>
+            </div>
+          </article>
+          <article class="col col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-10 offset-sm-1 list-card-item">
+            <div class="list-card-item__content">
+              <div class="list-card-item__icon-wrapper">
+                <i class="list-card-item__icon fab fa-wordpress"></i>
+              </div>
+              <h3 class="list-card-item__title">Посадка макета на  WP</h3>
+              <p class="list-card-item__description">
+                Интеграция верстки с системой управления контентом Wordpress
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="section-title__text">Обо мне</h2>
+          <p class="section-title__description">
+            Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты.
+          </p>
+        </div>
+        <div class="row about__content">
+          <div class="col col-lg-6 col-md-6 offset-md-0 col-sm-8 offset-sm-2 about__photo-wrapper">
+            <img src="../img/content/about-photo.png" alt="" class="about__photo-image">
+          </div>
+          <div class="col col-lg-6 offset-lg-0 col-md-10 offset-md-1 about__description">
+            <p class="about__description-item">
+              Меня зовут Александр. Живу в Могилеве (Беларусь). Занимаюсь HTML-версткой сайтов. 
+            </p>
+            <p class="about__description-item">
+              У меня  кроссбраузерная (IE11, Chrome, Mozilla, Safari), адаптивная и валидная верстка. 
+            </p>
+            <p class="about__description-item">
+              Мои рабочие инструменты: 
+            </p>
+            <ul class="about__craft-list">
+              <li class="about__craft-item">
+                <span>Gulp для автоматизации процесса верстки</span>
+              </li>
+              <li class="about__craft-item">
+                <span>Sass для ускоренной стилизации сайта и более гибкого кода</span>
+              </li>
+              <li class="about__craft-item">
+                <span>БЭМ naming</span>
+              </li>
+              <li class="about__craft-item">
+                <span>Bootstrap (в зависимости от проекта)</span>
+              </li>
+              <li class="about__craft-item">
+                <span>нативный JS и плагины Jquery</span>
+              </li>
+              <li class="about__craft-item">
+                <span>Wordpress в качестве движка</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container container--footer">
